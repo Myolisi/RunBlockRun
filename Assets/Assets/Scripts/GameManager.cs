@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour {
     public void playGame()
     {
         SceneManager.LoadScene(currentLevel);
-        SceneManager.UnloadScene(2);
+        SceneManager.UnloadSceneAsync(3);
         Debug.Log(currentLevel);
     }
 

@@ -20,7 +20,8 @@ public class timer : MonoBehaviour {
 		if (gameTimer <= 0)
 		{
 			timerLabel.text = "Timer: 0";
-            SceneManager.UnloadScene(1);
+            GameManager.unlockedLevel = 1;
+            //SceneManager.UnloadScene(1);
 		}
 
 	}
